@@ -2,12 +2,35 @@
 
 ### Logical vs. Physical Address
 
-- 논리주소 : 프로세스가 독립적으로 가지는 공간, 0부터 시작, CPU가 보는 주소 
+- 논리주소 : 프로세스가 독립적으로 가지는 공간, 0부터 시작된다. 
 - 물리주소 : 메모리에 실제 올라가는 위치
+
+CPU가 바라보는 주소는 논리주소이기 때문에, 컴파일러가 물리 주소로 바꿔서 
 
 ### 주소바인딩(Address Binding)
 
-- symbolic address > logical address > physical address 로 주소를 결정하는 것
+- logical address > physical address 로 주소를 바꿔 결정하는 것.
+- absolute code(컴파일 할 때 주소바인딩) vs relocatable code(실행 할 때 주소 바인딩) 
+
+### [absolute code]
+
+1) compile time binding
+
+- 컴파일 단계에서 컴파일러가 절대 코드(absolute code)를 생성해서 물리적 메모리 주소 결정.
+- 시작 위치 변경시 재컴파일
+
+### [relocatable code]
+
+2) load time binding
+
+- loader 가 물리적 메모리 주소 부여
+
+
+3) execution time binding(=run time binding)
+
+- cpu가 주소 참조할 때마다 binding 점검
+- 메모리 주소를 정하는 것은 운영체제 X > 하드웨어 O 
+
 
 ### Memory-Management Unit(MMU)
 
