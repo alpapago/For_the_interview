@@ -2,15 +2,18 @@
 
 ### Logical vs. Physical Address
 
+파일 시스템에 있는 프로그램을 메모리에 올려야 프로세스가 실행이 된다. 
+CPU가 참조하는 주소는 논리주소이기 때문에, 하드웨어가 물리 주소로 바꿔서 주소를 할당한다.
+
 - 논리주소 : 프로세스가 독립적으로 가지는 공간, 0부터 시작된다. 
 - 물리주소 : 메모리에 실제 올라가는 위치
-
-CPU가 바라보는 주소는 논리주소이기 때문에, 컴파일러가 물리 주소로 바꿔서 
 
 ### 주소바인딩(Address Binding)
 
 - logical address > physical address 로 주소를 바꿔 결정하는 것.
 - absolute code(컴파일 할 때 주소바인딩) vs relocatable code(실행 할 때 주소 바인딩) 
+
+
 
 ### [absolute code]
 
