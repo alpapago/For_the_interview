@@ -2,11 +2,12 @@
 
 ### Logical vs. Physical Address
 
-- 
+- 논리주소 : 프로세스가 독립적으로 가지는 공간, 0부터 시작, CPU가 보는 주소 
+- 물리주소 : 메모리에 실제 올라가는 위치
 
 ### 주소바인딩(Address Binding)
 
-- 
+- symbolic address > logical address > physical address 로 주소를 결정하는 것
 
 ### Memory-Management Unit(MMU)
 
