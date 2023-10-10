@@ -34,11 +34,16 @@ CPU가 바라보는 주소는 논리주소이기 때문에, 컴파일러가 물�
 
 ### Memory-Management Unit(MMU)
 
-- 
+- 논리 주소를 물리 주소로 변환 해주는 하드웨어
+- 물리 주소 생성 방법 : 사용자 process가 cpu에서 수행, 생성해내는 모든 주소값에 대해 base register값을 더한다. 
+
+- User 프로그램은 논리주소만 본다. 
 
 ### Dynamic Relocation
 
-- 
+- 프로그램 전체를 메모리에 다 올리는 것이 아니라 해당 루틴이 불려질 때 메모리에 load
+- memory utilization 향상
+- overlay(필요한 부분만 메모리에 올림)과 비슷한 의미
 
 ### Hadware Support for Address Translation
 
