@@ -13,7 +13,7 @@ CPU가 참조하는 주소는 논리주소이기 때문에, 하드웨어가 물�
 - logical address > physical address 로 주소를 바꿔 결정하는 것.
 - absolute code(컴파일 할 때 주소바인딩) vs relocatable code(실행 할 때 주소 바인딩) 
 
-!(./주소바인딩.PNG)
+![img](./주소바인딩.PNG)
 
 ### [absolute code]
 
